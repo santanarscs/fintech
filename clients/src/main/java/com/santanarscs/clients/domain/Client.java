@@ -1,3 +1,5 @@
+package com.santanarscs.clients.domain;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,4 +24,9 @@ public class Client {
   @Column
   private Integer age;
 
+  public Client(String cpf, String name, Integer age) {
+    this.cpf = cpf;
+    this.name = name;
+    this.age = age;
+  }
 }
